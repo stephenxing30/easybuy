@@ -3,6 +3,7 @@ package com.kgc.easybuy_pro.service.impl;
 import com.kgc.easybuy_pro.mapper.CategoryMapper;
 import com.kgc.easybuy_pro.pojo.Category;
 import com.kgc.easybuy_pro.service.CategoryService;
+import com.kgc.easybuy_pro.util.ResponseMsg;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +19,17 @@ public class CategoryServiceImpl implements CategoryService {
     private CategoryMapper categoryMapper;
 
     @Override
-    public List<Category> selectByCategoryList() {
+    public ResponseMsg selectByCategoryList() {
+        ResponseMsg msg = new ResponseMsg();
         logger.info("CategoryServiceImpl selectByCategory is start...");
-        List<Category> categories = categoryMapper.selectCategoryList();
-        return categories;
+        List<Category> categorieList = categoryMapper.selectCategoryList();
+        if (categorieList.isEmpty()) {
+            msg.setCode("301");
+            return msg;
+        }
+        msg.setData(categorieList);
+        msg.setCode("200");
+        logger.debug("CategoryServiceImpl selectByCategory params msg:{}", msg);
+        return msg;
     }
 }
