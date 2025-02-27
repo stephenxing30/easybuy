@@ -5,7 +5,24 @@ public class Category {
 
     private Integer categoryid;
     private String categoryname;
+    private String childcategoryname;
+    private String grandsoncategoryname;
 
+    public String getChildcategoryname() {
+        return childcategoryname;
+    }
+
+    public void setChildcategoryname(String childcategoryname) {
+        this.childcategoryname = childcategoryname;
+    }
+
+    public String getGrandsoncategoryname() {
+        return grandsoncategoryname;
+    }
+
+    public void setGrandsoncategoryname(String grandsoncategoryname) {
+        this.grandsoncategoryname = grandsoncategoryname;
+    }
 
     public Integer getCategoryid() {
         return categoryid;
@@ -29,6 +46,8 @@ public class Category {
         return "Category{" +
                 "categoryid=" + categoryid +
                 ", categoryname='" + categoryname + '\'' +
+                ", childcategoryname='" + childcategoryname + '\'' +
+                ", grandsoncategoryname='" + grandsoncategoryname + '\'' +
                 '}';
     }
 }

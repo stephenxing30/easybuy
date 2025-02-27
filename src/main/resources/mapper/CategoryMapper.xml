@@ -5,7 +5,33 @@
 <mapper namespace="com.kgc.easybuy_pro.mapper.CategoryMapper">
 
     <select id="selectCategoryList" resultType="com.kgc.easybuy_pro.pojo.Category">
-        select categoryid, categoryname
-        from category;
+        select a.categoryid,a.categoryname,b.childcategoryid,b.childcategoryname as
+        childcategoryname,c.grandsoncategoryid,c.grandsoncategoryname
+        from category as a,childcategory as b, grandsoncategory as c
+        <where>
+            a.categoryid = b.categoryid
+            and b.childcategoryid = c.childcategoryid
+            <if test="childcategoryname != null and childcategoryname != ''">
+                and b.childcategoryname = #{childcategoryname}
+            </if>
+        </where>
+        order by a.categoryid
+        limit #{from},#{pageSize}
+    </select>
+    <select id="selectCount" resultType="java.lang.Integer">
+        select count(1)
+        from category as a,childcategory as b, grandsoncategory as c
+        <where>
+            a.categoryid = b.categoryid
+            and b.childcategoryid = c.childcategoryid
+            <if test="childcategoryname != null and childcategoryname != ''">
+                and b.childcategoryname = #{childcategoryname}
+            </if>
+        </where>
+    </select>
+    <select id="selectThirdCategory" resultType="com.kgc.easybuy_pro.pojo.Category">
+        select a.categoryid,a.categoryname,b.categoryid,b.childcategoryid,b.childcategoryname
+        from category as a,childcategory as b
+        where a.categoryid = b.categoryid
     </select>
 </mapper>
