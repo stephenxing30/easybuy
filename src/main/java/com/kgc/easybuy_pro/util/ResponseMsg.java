@@ -1,6 +1,7 @@
 package com.kgc.easybuy_pro.util;
 
 public class ResponseMsg {
+
     private String code;
     private String msg;
     private Object data;
