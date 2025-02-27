@@ -52,4 +52,7 @@ public class PageInfo<T> {
     public void setList(List<T> list) {
         this.list = list;
     }
+    public  void sdasd(){
+        System.out.println("测试");
+    }
 }
