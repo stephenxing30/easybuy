@@ -1,12 +1,13 @@
 package com.kgc.easybuy_pro.util;
 
 import java.util.List;
+
 public class PageInfo<T> {
 
-    private int pageNo;
-    private int pageSize;
-    private int total;
-    private int pages;
+    private int pageNo;//当前页码
+    private int pageSize;//页面容量
+    private int total;//总数
+    private int pages;//总页数
     private List<T> list;
 
     public int getPageNo() {
