@@ -29,12 +29,12 @@ public class ResponseMessage {
         this.msg = msg;
     }
 
-//    @Override
-//    public String toString() {
-//        return "ResponseMessage{" +
-//                "code='" + code + '\'' +
-//                ", msg='" + msg + '\'' +
-//                ", data=" + data +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "ResponseMessage{" +
+                "code='" + code + '\'' +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
+                '}';
+    }
 }
