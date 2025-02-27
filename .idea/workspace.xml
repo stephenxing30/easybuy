@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f180b88-34f6-4672-b2a5-8cb5a96047c1" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/pojo/User.java" afterDir="false" />
+    <list default="true" id="6f180b88-34f6-4672-b2a5-8cb5a96047c1" name="Changes" comment="周兴星">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/easybuy_pro/mapper/UserMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +75,7 @@
     "Maven.easybuy_pro [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.EasybuyProApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -93,6 +92,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="EasybuyProApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="easybuy_pro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.easybuy_pro.EasybuyProApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kgc.easybuy_pro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EasybuyProApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -114,7 +133,7 @@
       <workItem from="1740626362253" duration="238000" />
       <workItem from="1740635379316" duration="19000" />
       <workItem from="1740635411420" duration="130000" />
-      <workItem from="1740635806971" duration="590000" />
+      <workItem from="1740635806971" duration="1657000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -260,7 +279,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740636063303</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test">
+      <option name="closed" value="true" />
+      <created>1740636413434</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740636413434</updated>
+    </task>
+    <task id="LOCAL-00020" summary="周兴星">
+      <option name="closed" value="true" />
+      <created>1740636915743</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740636915743</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +316,7 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="11" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="周兴星" />
+    <option name="LAST_COMMIT_MESSAGE" value="周兴星" />
   </component>
 </project>
