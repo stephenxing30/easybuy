@@ -1,7 +1,6 @@
 package com.kgc.easybuy_pro.util;
 
 import java.util.List;
-
 public class PageInfo<T> {
     private int pageNo;
     private int pageSize;
